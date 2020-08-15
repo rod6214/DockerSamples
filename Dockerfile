@@ -4,5 +4,4 @@ WORKDIR /usr/src/app
 COPY ./app/* ./
 # # set application directory as workdir
 RUN npm install
-# # CMD node /usr/src/app/index.js
 ENTRYPOINT [ "node", "index.js" ]
