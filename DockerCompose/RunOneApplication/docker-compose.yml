@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  webapp1:
+    build: ./webapp1
+    ports:
+      - 5000:3000
+    networks:
+      - testnet
+networks:
+  testnet:
+    external: true
+    name: test-net          
