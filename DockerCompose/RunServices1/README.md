@@ -1,10 +1,10 @@
-# ⚡ Consume api rest with Vue.js
+# 📘 Run services with docker compose
 
-Example on how to consume and display data from a REST API through Vue.js, using Axios.js. 
+Docker compose is a tool that is integrated in the docker installation and we can use it to run containers automatically. 
 
-Traslate:  [Readme Spanish](README.es.md)
+[Read more](https://docs.docker.com/)
 
-## Starting 🚀
+## Get started 🚀
 
 you should do the following steps before start the proyect:
 
