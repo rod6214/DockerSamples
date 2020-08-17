@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  webapp1:
+    container_name: test5000
+    build: ./webapp1
+    networks:
+      - testnet
+  webapp2:
+    container_name: test6000
+    build: ./webapp2
+    networks:
+      - testnet
+  ngproxy:
+    container_name: ngproxy_nice
+    build: ./nginx_proxy
+    ports: 
+      - 7070:80
+      - 4430:443
+    depends_on: 
+      - webapp1
+      - webapp2
+    networks:
+      - testnet
+networks:
+  testnet:
+    external: true
+    name: test-net
