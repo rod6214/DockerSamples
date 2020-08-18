@@ -16,3 +16,6 @@ you should do the following steps before start the proyect:
 - At the root directory run the command: `docker-compose up -d`
 
 Note: you could create the network with custom configurations as ip address and others
+
+### Running 🏁
+After docker build it'll create three containers; there are two servers, one in the extern secure port 6000 and the other on port 5000 running on unsafe http. Finally, the remaining container is a nginx instances for proxy.
